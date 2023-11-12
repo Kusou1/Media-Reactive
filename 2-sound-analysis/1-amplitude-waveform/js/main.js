@@ -5,7 +5,7 @@ let amp
 let fft
 
 function preload() {
-  audio = loadSound('../../../audio/01.mp3')
+  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 }
 
 function setup() {

@@ -5,7 +5,7 @@ let audio, fft, binWidth
 const bins = 64
 
 function preload() {
-  audio = loadSound('../../../audio/01.mp3')
+  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 }
 
 function setup() {
