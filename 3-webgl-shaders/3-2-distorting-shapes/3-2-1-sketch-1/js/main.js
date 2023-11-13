@@ -2,7 +2,7 @@ let myShaders, audio, amp, fft
 
 function preload() {
   myShaders = loadShader('shaders/vertex.vert', 'shaders/fragment.frag')
-  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
+  audio = loadSound('../../../audio/01.mp3')
 }
 
 function setup() {
@@ -18,6 +18,7 @@ function setup() {
 function draw() {
   background(0)
 
+  // analyze() must be called prior to getCentroid()
   fft.analyze()
   
   const volume = amp.getLevel() // 0 - 1
