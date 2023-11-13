@@ -2,6 +2,7 @@ let audio, fft, binWidth
 
 // FFT analysis resolution.
 // Must be a power of two between 16 and 1024.
+// More higher of bins mean more accurate analysis
 const bins = 64
 
 function preload() {

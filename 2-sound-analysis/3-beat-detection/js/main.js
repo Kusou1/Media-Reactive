@@ -13,7 +13,7 @@ const bins = 64
 // treble = [5200, 14000]
 
 function preload() {
-  audio = loadSound('../../../audio/03.mp3')
+  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 }
 
 function setup() {
@@ -23,6 +23,7 @@ function setup() {
   fft = new p5.FFT()
 
   peakDetect = new p5.PeakDetect(140, 400, 0.8)
+  // peakDetect = new p5.PeakDetect(0, 400, 0.1)
   peakDetect.onPeak(peakDetected)
 }
 

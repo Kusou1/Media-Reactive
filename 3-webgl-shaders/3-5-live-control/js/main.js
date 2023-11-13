@@ -10,7 +10,7 @@ const texts = [...document.querySelectorAll('.text span')]
 
 function preload() {
   myShaders = loadShader('shaders/vertex.vert', 'shaders/fragment.frag')
-  audio = loadSound('../../../audio/02.mp3')
+  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 }
 
 function setup() {

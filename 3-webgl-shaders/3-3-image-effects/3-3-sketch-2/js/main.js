@@ -1,7 +1,7 @@
 let audio, amplitude, fft, myShader, dMap, img
 
 function preload() {
-  audio = loadSound('../../../audio/01.mp3')
+  audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 	myShader = loadShader('shaders/vertex.vert', 'shaders/fragment.frag')
   img = loadImage('images/01.jpg')
   // dMap = loadImage('images/dmaps/fibers.jpg')
