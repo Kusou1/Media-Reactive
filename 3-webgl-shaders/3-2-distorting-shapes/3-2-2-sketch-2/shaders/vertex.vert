@@ -193,7 +193,7 @@ float pnoise(vec3 P, vec3 rep)
 
 
 void main() {
-    float displacement = uAmp * pnoise(aNormal + (uTime * 0.01), vec3(0.0));
+    float displacement = uAmp * pnoise(aNormal + (uTime * 0.001), vec3(0.0));
 
     vec4 newPosition = vec4(aPosition + displacement * aNormal, 1.0);
 
