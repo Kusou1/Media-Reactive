@@ -3,7 +3,7 @@ let audio, amplitude, fft, myShader, img
 function preload() {
   audio = loadSound('../../../audio/shi-shi-ban-zou.mp3')
 	myShader = loadShader('shaders/vertex.vert', 'shaders/fragment.frag')
-  img = loadImage('images/01.jpg')
+  img = loadImage('images/1.jpg')
 }
 
 

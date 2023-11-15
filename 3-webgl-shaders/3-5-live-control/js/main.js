@@ -62,16 +62,20 @@ function triggerBeat() {
 	changeTexts()
 }
 
+function togglePlay() {
+  if (audio.isPlaying()) {
+    audio.pause()
+  } else {
+    audio.play()
+  }
+}
+
 function mousePressed() {
   if (mouseX > 0 && mouseX > width - 100 && mouseY > 0 && mouseY < 100) {
     let fs = fullscreen()
     fullscreen(!fs)
   } else {
-	  if (audio.isPlaying()) {
-		  audio.pause()
-	  } else {
-		  audio.play()
-	  }	  
+	  togglePlay()  
   }
 }
 
@@ -82,6 +86,7 @@ function keyPressed () {
     changeTexts()
 	} else if (keyCode === 32) {
     // Spacebar
+    togglePlay()
 	} else {
 	}
 }
